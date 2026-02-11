@@ -1,16 +1,24 @@
-# ecommerce_app
+# Ecommerce Customer App (Flutter)
 
-A new Flutter project.
+Customer mobile application for a multi-role ecommerce system.
 
-## Getting Started
+## Features
+- User registration & login
+- Product browsing
+- Cart & checkout
+- Order history
+- API integration
 
-This project is a starting point for a Flutter application.
+## Tech Stack
+- Flutter
+- Dart
+- REST API
+- GetX
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
+(Add screenshots here)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Related Repositories
+- Backend API: link
+- Driver App: link
+- Admin App: link
