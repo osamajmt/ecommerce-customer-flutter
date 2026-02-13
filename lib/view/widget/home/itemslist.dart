@@ -65,12 +65,23 @@ class Items extends GetView<HomeScreenControllerImp> {
               borderRadius: const BorderRadius.vertical(
                 top: Radius.circular(18),
               ),
-              child: Image.network(
+              child:
+               Image.network(
                 "${AppLink.itemsImages}/${itemsModel.image}",
                 height: 120,
                 width: double.infinity,
                 fit: BoxFit.contain,
-                
+                errorBuilder: (context, error, stackTrace) {
+                  return Container(
+                    height: 120,
+                    color: Colors.grey.shade200,
+                    child: const Icon(
+                      Icons.image_not_supported,
+                      size: 120,
+                      color: Colors.grey,
+                    ),
+                  );
+                },
               ),
             ),
             const SizedBox(height: 10),

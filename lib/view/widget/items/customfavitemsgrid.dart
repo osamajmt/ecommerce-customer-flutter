@@ -1,4 +1,3 @@
-
 import 'package:ecommerce_app/controller/favorites_controller.dart';
 import 'package:ecommerce_app/core/function/translate.dart';
 import 'package:ecommerce_app/data/model/favoritesmodel.dart';
@@ -33,24 +32,28 @@ class CustomFavItemsGrid extends GetView<FavoritesControllerImp> {
             children: [
               Hero(
                 tag: '${favoritesModel.id}',
-                child:  Image.network(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.network(
                     "${AppLink.itemsImages}/${favoritesModel.image}",
                     height: 120,
                     width: double.infinity,
                     fit: BoxFit.contain,
                     errorBuilder: (context, error, stackTrace) {
                       return Container(
-                        height: 120,
+                        height: 140,
                         color: Colors.grey.shade200,
                         child: const Icon(
                           Icons.image_not_supported,
-                          size: 40,
+                          size: 140,
                           color: Colors.grey,
                         ),
                       );
                     },
-                  )
+                  ),
+                ),
               ),
+              const SizedBox(height: 10),
               Text(
                 translate(favoritesModel.nameAr, favoritesModel.name),
                 style: theme.textTheme.titleMedium?.copyWith(
@@ -85,4 +88,3 @@ class CustomFavItemsGrid extends GetView<FavoritesControllerImp> {
     );
   }
 }
-

@@ -20,7 +20,7 @@ class Login extends StatelessWidget {
     Get.lazyPut(() => LogInControllerImp());
 
     return Scaffold(
-      appBar: AppBar(title: Text("123".tr), centerTitle: true),
+      appBar: AppBar(title: Text("129".tr), centerTitle: true),
       body: PopScope(
         canPop: false,
         onPopInvokedWithResult: (didPop, result) async {

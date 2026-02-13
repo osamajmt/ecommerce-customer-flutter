@@ -124,7 +124,7 @@ class translations extends Translations {
       "120": "Next",
       "121": "Skip",
       "122": "Get Started",
-      "123": "Sign In",
+      "123": "Sign Up",
       "124": "Sign in with your email and password",
       "125": "Password",
       "126": "Enter your email",

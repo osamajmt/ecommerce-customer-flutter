@@ -19,19 +19,7 @@ class Signup extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        centerTitle: true,
-        title: Text(
-          "Sign Up",
-          style: theme.textTheme.headlineSmall?.copyWith(
-            color: Colors.black87,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
+     appBar: AppBar(title: Text("123".tr), centerTitle: true),
       body: GetBuilder<SignUpControllerImp>(
         builder: (controller) {
           return SafeArea(
@@ -116,15 +104,15 @@ class Signup extends StatelessWidget {
                     ),
 
                     if (controller.statusRequest == StatusRequest.loading)
-                       Center(
+                      Center(
                         child: Padding(
                           padding: EdgeInsets.only(top: 10),
                           child: Lottie.asset(
-                          'assets/lotties/loading_spinner.json',
-                          width: 150,
-                          height: 150,
-                        repeat: true
-                        ),
+                            'assets/lotties/loading_spinner.json',
+                            width: 150,
+                            height: 150,
+                            repeat: true,
+                          ),
                         ),
                       )
                     else
@@ -143,8 +131,3 @@ class Signup extends StatelessWidget {
     );
   }
 }
-
-
-
-
-

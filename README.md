@@ -16,9 +16,15 @@ Customer mobile application for a multi-role ecommerce system.
 - GetX
 
 ## Screenshots
-(Add screenshots here)
+![Login](screenshots/login.png)
+![Home](screenshots/home.png)
+![Cart](screenshots/cart.png)
+![Checkout](screenshots/checkout.png)
+![Products](screenshots/products.png)
+![ProductDetails](screenshots/productDetails.png)
+![Profile](screenshots/profile.png)
 
 ## Related Repositories
-- Backend API: link
-- Driver App: link
-- Admin App: link
+- Backend API:[link](https://github.com/osamajmt/ecommerce-api-laravel)
+- Driver App: [link](https://github.com/osamajmt/ecommerce-delivery-flutter)
+- Admin App: [link](https://github.com/osamajmt/ecommerce-admin-flutter)
